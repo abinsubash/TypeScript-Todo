@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todo App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <div class="input-section">
-        <input id="input" type="text" placeholder="Add todo...">
-        <button onclick="submitFn()" type="submit">Add</button>
+        <header>
+            <h1>Todo List</h1>
+            <p>Organize your tasks efficiently</p>
+        </header>
+        
+        <div class="input-section">
+            <input id="input" type="text" placeholder="Add a new task..." />
+            <button onclick="submitFn()" type="submit">Add Task</button>
+        </div>
+        
+        <div class="todo-list-section">
+            <ul id="todo-list">
+            </ul>
+        </div>
     </div>
-</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
